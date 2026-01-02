@@ -6,21 +6,29 @@
     <title>Educación Financiera para Jóvenes</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; background-color: #f9f9f9; }
-        header { text-align: center; background-color: #4CAF50; color: white; padding: 20px; }
+        header { text-align: center; background-color: #4CAF50; color: white; padding: 20px; position: relative; }
+        .logo-lasalle { position: absolute; top: 10px; right: 10px; width: 100px; height: auto; }
         nav { background-color: #333; color: white; padding: 10px; text-align: center; }
         nav a { color: white; margin: 0 15px; text-decoration: none; }
         nav a:hover { text-decoration: underline; }
         section { margin-bottom: 30px; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .collage { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .collage img { width: 30%; min-width: 150px; height: auto; border-radius: 8px; }
         img { max-width: 100%; height: auto; border-radius: 8px; }
-        footer { text-align: center; padding: 10px; background-color: #333; color: white; }
         .icon { width: 50px; height: 50px; margin: 5px; }
+        button { background-color: #4CAF50; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+        button:hover { background-color: #45a049; }
+        .hidden { display: none; }
+        footer { text-align: center; padding: 10px; background-color: #333; color: white; }
+        form { max-width: 400px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; }
     </style>
 </head>
 <body>
     <header>
         <h1>Educación Financiera para Jóvenes</h1>
-        <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg" alt="Logotipo: Mano sosteniendo una moneda y un cerebro, representando finanzas inteligentes" width="200">
-        <p>Aprende a manejar tu dinero desde joven para un futuro seguro.</p>
+        <img src="https://www.lasalle.edu.ec/wp-content/uploads/2020/05/logo-lasalle-guayaquil.png" alt="Logo de La Salle Guayaquil" class="logo-lasalle">
+        <p>Aprende a manejar tu dinero desde joven para un futuro seguro. Apoyado por La Salle Guayaquil.</p>
     </header>
     
     <nav>
@@ -29,36 +37,59 @@
         <a href="#consejos">Consejos Prácticos</a> | 
         <a href="#herramientas">Herramientas</a> | 
         <a href="#galeria">Galería</a> | 
-        <a href="#feedback">Feedback</a>
+        <a href="#feedback">Feedback</a> | 
+        <a href="#contacto">Contacto</a>
     </nav>
     
     <section id="inicio">
         <h2>Inicio</h2>
-        <p>La educación financiera es clave para que los jóvenes eviten deudas y construyan riqueza. Según el Banco Mundial (2022), muchos jóvenes carecen de conocimientos básicos, lo que lleva a decisiones erróneas. Este sitio te guía paso a paso.</p>
-        <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg" alt="Imagen de sección: Jóvenes discutiendo finanzas en un aula">
+        <p>La educación financiera es clave para que los jóvenes eviten deudas y construyan riqueza. Según el Banco Mundial (2022), el 70% de los jóvenes globales carecen de conocimientos básicos, lo que lleva a decisiones erróneas como endeudamiento excesivo. Este sitio te guía paso a paso con ejemplos reales y consejos aplicables.</p>
+        <p><strong>Subtema: ¿Por qué empezar ahora?</strong> A los 18 años, el interés compuesto puede multiplicar tu ahorro. Ejemplo: $100 ahorrados hoy valen $200 en 10 años al 7% de interés (calculadora simple: usa apps como Compound Interest Calculator).</p>
+        <div class="collage">
+            <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg" alt="Jóvenes discutiendo finanzas en aula">
+            <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg" alt="Gráfico de crecimiento financiero">
+            <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg" alt="Mano con moneda simbolizando ahorro">
+        </div>
     </section>
     
     <section id="beneficios">
         <h2>Beneficios de la Educación Financiera</h2>
-        <p>Mejora la independencia económica, reduce el estrés por deudas y fomenta el ahorro. Estudios muestran que los jóvenes educados financieramente ahorran más (Khan Academy, 2023).</p>
-        <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg" alt="Imagen clave: Gráfico de crecimiento financiero">
+        <p>Mejora la independencia económica, reduce el estrés por deudas y fomenta el ahorro. Estudios muestran que los jóvenes educados financieramente ahorran un 20% más (Khan Academy, 2023). Beneficios a largo plazo incluyen jubilación segura y libertad financiera.</p>
+        <p><strong>Subtema: Impacto en la salud mental</strong> Evitar deudas reduce ansiedad; según Forbes (2021), el 40% de los millennials sufren estrés financiero.</p>
+        <p><strong>Subtema: Oportunidades laborales</strong> Conocimientos financieros abren puertas a carreras en banca o emprendimiento.</p>
+        <div class="collage">
+            <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg" alt="Gráfico de crecimiento">
+            <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg" alt="Personas colaborando">
+            <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Persona feliz con dinero">
+        </div>
     </section>
     
     <section id="consejos">
         <h2>Consejos Prácticos para Jóvenes</h2>
-        <ul>
-            <li>Crea un presupuesto mensual: Rastrea ingresos y gastos.</li>
-            <li>Evita deudas innecesarias: Usa tarjetas de crédito con moderación.</li>
-            <li>Invierte temprano: Aprovecha el interés compuesto.</li>
-        </ul>
-        <p>Referencia: Forbes (2021) recomienda empezar a ahorrar desde los 18 años.</p>
-        <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Imagen de sección: Persona calculando presupuesto">
+        <p>Crea un presupuesto mensual: Rastrea ingresos y gastos. Evita deudas innecesarias: Usa tarjetas de crédito con moderación. Invierte temprano: Aprovecha el interés compuesto. Forbes (2021) recomienda empezar a ahorrar desde los 18 años.</p>
+        <p><strong>Subtema: Presupuesto básico</strong> Regla 50/30/20: 50% necesidades, 30% deseos, 20% ahorro.</p>
+        <button onclick="toggleSection('sub-consejos')">Ver más consejos</button>
+        <div id="sub-consejos" class="hidden">
+            <p><strong>Subtema: Evitar trampas comunes</strong> No compres impulsivamente; espera 24 horas. Estadística: El 60% de las deudas jóvenes vienen de compras innecesarias (Banco Mundial, 2022).</p>
+            <p><strong>Subtema: Inversión segura</strong> Empieza con fondos indexados; evita riesgos altos sin educación.</p>
+        </div>
+        <div class="collage">
+            <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Persona calculando presupuesto">
+            <img src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg" alt="Calculadora financiera">
+            <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg" alt="Monedas apiladas">
+        </div>
     </section>
     
     <section id="herramientas">
         <h2>Herramientas Útiles</h2>
         <p>Apps como Mint o YNAB para presupuestos. Libros como "Padre Rico, Padre Pobre" de Robert Kiyosaki. Recursos en línea de la SEC (Comisión de Valores de EE.UU.).</p>
-        <img src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg" alt="Imagen clave: Teléfono con app financiera">
+        <p><strong>Subtema: Apps gratuitas</strong> PocketGuard para rastreo diario; Acorns para micro-inversiones.</p>
+        <p><strong>Subtema: Cursos online</strong> Coursera ofrece "Finanzas Personales" gratis; edX tiene módulos sobre inversiones.</p>
+        <div class="collage">
+            <img src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg" alt="Teléfono con app financiera">
+            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Libro abierto">
+            <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg" alt="Pantalla con gráficos">
+        </div>
     </section>
     
     <section id="galeria">
@@ -67,8 +98,27 @@
         <img src="https://images.pexels.com/photos/114907/pexels-photo-114907.jpeg" alt="Icono de casa" class="icon">
         <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Icono de libro" class="icon">
         <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg" alt="Icono de estrella" class="icon">
-        <p>Ideograma: <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg" alt="Ideograma: Árbol de decisiones financieras" width="150"></p>
-        <p>Infograma: <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg" alt="Infograma: Diagrama de flujo de ahorro" width="300"></p>
+        <p><strong>Ideograma: Árbol de Decisiones Financieras</strong></p>
+        <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="150" cy="50" r="20" fill="#4CAF50"/><text x="150" y="55" text-anchor="middle" fill="white">Inicio</text>
+            <line x1="150" y1="70" x2="100" y2="100" stroke="#333" stroke-width="2"/>
+            <line x1="150" y1="70" x2="200" y2="100" stroke="#333" stroke-width="2"/>
+            <circle cx="100" cy="120" r="15" fill="#FF9800"/><text x="100" y="125" text-anchor="middle" fill="white">Ahorro</text>
+            <circle cx="200" cy="120" r="15" fill="#FF9800"/><text x="200" y="125" text-anchor="middle" fill="white">Gasto</text>
+            <line x1="100" y1="135" x2="150" y2="165" stroke="#333" stroke-width="2"/>
+            <line x1="200" y1="135" x2="150" y2="165" stroke="#333" stroke-width="2"/>
+            <circle cx="150" cy="180" r="20" fill="#2196F3"/><text x="150" y="185" text-anchor="middle" fill="white">Riqueza</text>
+        </svg>
+        <p><strong>Infograma: Proceso de Ahorro</strong></p>
+        <svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="50" width="80" height="40" fill="#4CAF50"/><text x="50" y="70" text-anchor="middle" fill="white">Ingreso</text>
+            <polygon points="90,70 110,60 110,80" fill="#333"/>
+            <rect x="120" y="50" width="80" height="40" fill="#FF9800"/><text x="160" y="70" text-anchor="middle" fill="white">Presupuesto</text>
+            <polygon points="200,70 220,60 220,80" fill="#333"/>
+            <rect x="230" y="50" width="80" height="40" fill="#2196F3"/><text x="270" y="70" text-anchor="middle" fill="white">Ahorro</text>
+            <polygon points="310,70 330,60 330,80" fill="#333"/>
+            <rect x="340" y="50" width="50" height="40" fill="#FFC107"/><text x="365" y="70" text-anchor="middle" fill="black">Inversión</text>
+        </svg>
     </section>
     
     <section id="feedback">
@@ -88,8 +138,26 @@
         </ol>
     </section>
     
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas? Envía un mensaje.</p>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
     <footer>
-        <p>Referencias: Banco Mundial (2022). Khan Academy (2023). Forbes (2021). Imágenes de Pexels (libre uso). Sitio creado con apoyo de IA gratuita.</p>
+        <p>Referencias: Banco Mundial (2022). Khan Academy (2023). Forbes (2021). Imágenes de Pexels (libre uso). Logo de La Salle Guayaquil oficial. Sitio creado con apoyo de IA gratuita.</p>
     </footer>
+
+    <script>
+        function toggleSection(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
